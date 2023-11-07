@@ -1,0 +1,79 @@
+{%extends "base.html"%}
+{%block title%}Add Expense{%endblock%}
+{%block content_title%}
+    <div class="expense-container-title">
+        <h2>Add an Expense</h2>
+    </div>
+{%endblock%}
+{%block content_info%} 
+    <form method="POST">
+        <div class="expense-input-container">
+            <div class="expense-background">
+                <label for="expense-text" class="expense-input-label">With <strong>you</strong> and: </label>
+                <div class="expense-input-element">
+                    <input type="text" name="expense-payable" id="expense-payable" class="expense-payable" placeholder="yanbr@oregonstate.edu">
+                </div>
+            </div>
+        </div>
+
+        <div class="expense-input-container">
+            <div class="expense-input-elements">
+                <div class="description-money">
+                    <input type="text" name="description" id="description" class="expense-input" placeholder="Enter Description">
+                </div>
+                <div class="description-money">
+                    <label for="dollar-sign" name="dollar-sign" id="dollar">$</label>
+                    <input type="text" name="expense" id="expense" class="expense-input" placeholder="Enter Expense" >
+                </div>
+            </div>
+        </div>
+
+        <div class="expense-input-container">
+            <label for="split-text" class="split-text">Paid by </label>
+            <div class="expense-split-input">
+                <input type="text" name="person-paid" id="person-paid" class="split-bubble" placeholder="You">
+            </div>
+            <label for="split-text" class="split-text">and split </label>
+            <div class="expense-split-input">
+                <select id="split-type" class="split-bubble" name="split-type">
+                    <option selected value="">Equally</option>
+                    <option>Unequally</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="expense-input-container">
+            <div class="expense-input-bubble">
+                <div class="expense-input-element">
+                <input type="text" name="expense-date" id="expense-date" class="expense-bubble" placeholder="MM/DD/YYYY">
+                </div>
+            </div>
+
+            <div class="expense-input-bubble">
+                <div class="expense-input-element">
+                <input type="text" name="expense-group" id="expense-group" class="expense-bubble" placeholder="No Group">
+                </div>
+            </div>
+        </div>
+
+        <div class="expense-input-container">
+            <div class="expense-input-bubble">
+                <div class="expense-input-element">
+                <input type="text" name="expense-notes" id="expense-notes" class="expense-bubble" placeholder="Notes">
+                </div>
+            </div>
+        </div>
+        <div class="bot-right">
+            <button type="submit" class="bubble-button back-button" name="back">
+                <a href="/">Back</a>
+            </button>
+            <button type="submit" class="bubble-button submit-button" name="submit">
+                <a href="/">Submit</a>
+            </button>
+        </div>
+    </form>
+{%endblock%}
+{%block modal1%}
+    <h2>Adding an expense</h2>
+    <p>So you want to add an expense, you can start by filling in all information such as which group this involves, some notes, and a description!</p>
+{%endblock%}

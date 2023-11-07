@@ -1,0 +1,37 @@
+{%extends "base.html"%}
+{%block content_title%}
+    <div class="expense-container-title">
+        <h2>Home</h2>
+    </div>
+{%endblock%}{%block content_info%} 
+    <div class="container">
+        <h1 class="welcome-message">Welcome to Beta Splitify!</h1>
+        <p>Simplify your shared expenses with friends, family, and colleagues. With Splitify, managing and dividing expenses has never been easier. Whether you're going on a trip, organizing an event, or simply splitting bills, we've got you covered.</p>
+        <p><strong>Current Key Features:</strong></p>
+        <ul>
+            <li>Add an expense</li>
+            <li>Add notes and information about an expense</li>
+        </ul>
+        <p><strong>Future Key Features:</strong></p>
+        <ul>
+            <li>Display expenses</li>
+            <li>Send email to those apart of the expense</li>
+            <li>Calculate the expense</li>
+            <li>Login authentication</li>
+        </ul>
+        <p>Get started now and say goodbye to the hassle of manual calculations and awkward money exchanges. It's time to make shared expenses simple and enjoyable!</p>
+    </div>
+    <div class="center">
+        <form method="POST">
+            <button class="bubble-button add-button" name="add-expense">
+                <a href="/add-expense">Add an Expense</a>
+            </button>
+        </form>
+    </div>
+
+{%endblock%}
+
+{%block modal1%}
+    <h2>How to add an expense</h2>
+    <p>Hi There! To start click on the add expense page!</p>
+{%endblock%}

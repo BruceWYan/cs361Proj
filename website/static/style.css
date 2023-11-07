@@ -1,0 +1,249 @@
+body{
+    margin:0;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    height: 80px;
+    background-color: lightblue;
+    margin: 0;
+    align-items: center;
+    justify-content: center;}
+
+.site-title{
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: 300;
+    margin-left: 0;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.welcome-message{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+}
+.container{
+    margin-left: 10px;
+}
+#expense-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 700px;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.expense-container-title{
+    width: 100%;
+    background-color: rgb(0, 140, 255);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: white;
+    text-align: center;
+    height: 40px;
+}
+
+.expense-container-title h2{
+    margin-top: 10px;
+}
+
+.expense-input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.expense-input-label{
+    margin-left: 20px;
+}
+
+.expense-background{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    height: 30px;
+    font-size: 20px;
+    align-items: center;
+    width: 100%;
+}
+.expense-payable{
+    background-color: lightgray;
+    border: none;
+}
+
+.expense-input-elements{
+    display: flex;
+    flex-direction: column;
+}
+.expense-input{
+    border: 0;
+    height: 30px;
+    font-size: 20px;
+}
+#dollar{
+    font-size: 20px;
+}
+.expense-input::placeholder{
+    font-size: 20px;
+}
+
+.split-text{
+    font-size: 30px;
+}
+
+.expense-split-input{
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.split-bubble{
+    border-radius: 25px;
+    min-width: 20px;
+    width: auto;
+    border: none;
+    background-color: lightgray;
+    color: rgb(101, 139, 101);
+    min-height: 25px;
+    height: 25px;
+}
+
+#person-paid{
+    padding-left: 10px;
+}
+
+.split-bubble::placeholder{
+    color: rgb(101, 139, 101);
+    width: auto; /* Adjust the width as needed */
+    font-size: 20px;
+}
+
+.description-money{
+    border-bottom: 1px solid black;
+}
+
+.expense-bubble{
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    border: none;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    min-width: 100px;
+    width: 150px;
+
+}
+
+.expense-bubble::placeholder{
+    color: white;
+}
+
+.bot-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.bubble-button{
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
+    border: none;
+    height: 34px;
+    font-size: 20px;
+    min-width: 100px;
+}
+.submit-button{
+    background-color: rgb(11, 177, 206);
+}
+.back-button{
+    background-color: rgba(121, 114, 105, 0.87);
+}
+.add-button{
+    background-color: rgb(11, 177, 206);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+a:visited{
+    color: inherit;
+}
+
+
+
+
+
+
+#question-button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    left: 10px;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+

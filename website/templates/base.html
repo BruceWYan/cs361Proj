@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{%block title%}Splitify{%endblock%}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <h1 class="site-title">Splitify</h1>
+        </header>
+        <main class="content">
+                <section id="expense-container">
+                {%block content_title%}
+                    <div class="expense-container-title">
+                        <h2>Welcome to Splitify!</h2>
+                    </div>
+                {%endblock%}
+                {%block content_info%} 
+                    <h1>Hi</h1>
+                    
+                {%endblock%}
+        </main>
+        
+        <button id="question-button">?</button>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" id="close-button">&times;</span>
+                {%block modal1%}
+                    <h2>How to add an expense</h2>
+                    <p>Hi There! To start click on the add expense page!</p>
+                {%endblock%}
+            </div>
+        </div> 
+        
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </body>
+</html>

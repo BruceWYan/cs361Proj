@@ -1,27 +1,30 @@
 # cs361Proj
 
 Microservice for Handling Form Submissions
-    This Node.js microservice is designed to handle form submissions, parsing form data and saving the content of a text area to a file. Follow the steps below to set up and run the microservice.
+This Node.js microservice is designed to handle form submissions, parsing form data and saving the content of a text area to a file. Follow the steps below to set up and run the microservice.
 
 Prerequisites
-    Before you begin, ensure that you have Node.js installed on your machine. If not, you can download it from here.
+Before you begin, ensure that you have Node.js installed on your machine. If not, you can download it from here.
 
 Installation
+    
     Open a terminal or command prompt.
 
 Navigate to the directory where you have the microservice code.
 
 Install the formidable package using npm:
+
     npm install formidable
-    This will install the necessary dependencies for parsing form data.
+    
+This will install the necessary dependencies for parsing form data.
 
 Running the Microservice
-    After installing the dependencies, start the microservice by typing the following command in the terminal:
+After installing the dependencies, start the microservice by typing the following command in the terminal:
     
     node server.js
-    You should see a message indicating that the server is running on http://localhost:3000.
-
-    Your microservice is now waiting for POST requests. This typically happens when a form on your web application is submitted. Make sure your web application sends POST requests specifically to the file where this microservice code is located.
+    
+You should see a message indicating that the server is running on http://localhost:3000.
+Your microservice is now waiting for POST requests. This typically happens when a form on your web application is submitted. Make sure your web application sends POST requests specifically to the file where this microservice code is located.
 
 Code Explanation:
     - The microservice uses the formidable package to parse form data.

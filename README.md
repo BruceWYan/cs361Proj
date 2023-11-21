@@ -26,6 +26,9 @@ After installing the dependencies, start the microservice by typing the followin
 You should see a message indicating that the server is running on http://localhost:3000.
 Your microservice is now waiting for POST requests. This typically happens when a form on your web application is submitted. Make sure your web application sends POST requests specifically to the file where this microservice code is located.
 
+UML Diagram: 
+<img width="845" alt="uml" src="https://github.com/BruceWYan/cs361Proj/uml.png">
+
 Code Explanation:
     - The microservice uses the formidable package to parse form data.
     - When a POST request is received, the microservice extracts the value of the textAreaData field from the form data.

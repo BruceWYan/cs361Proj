@@ -27,7 +27,7 @@ You should see a message indicating that the server is running on http://localho
 Your microservice is now waiting for POST requests. This typically happens when a form on your web application is submitted. Make sure your web application sends POST requests specifically to the file where this microservice code is located.
 
 UML Diagram: 
-<img width="845" alt="uml" src="https://github.com/BruceWYan/cs361Proj/uml.png">
+<img width="845" alt="uml" src="https://github.com/BruceWYan/cs361Proj/assets/130004329/21ac3958-aee6-484c-af9d-e1ca97c7663b">
 
 Code Explanation:
     - The microservice uses the formidable package to parse form data.
